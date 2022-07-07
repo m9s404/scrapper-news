@@ -1,2 +1,2 @@
 # scrapper-news
-Scrapper to get notice from newspaper
+*Scrapper* to get notice from newspaper
