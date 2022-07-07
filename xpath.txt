@@ -1,0 +1,18 @@
+links = //h2[@class="headline"]/a/@href
+titulo = //h2[@data-h]/span/text()
+resumen = //div[@class="lead"]/p/text()
+cuerpo = //div[@class="html-content"]/p/node()/../text()
+
+Fixed
+
+links = //div[@data-epica-module-name]//div[@class = "col"]/a/@href
+title = //h2/text()
+summary = //strong/text()
+body = //p/text()
+
+Fixed 2
+
+Links = $x('//div[@class="news V_Title_Img"]/a/@href').map(x => x.value)
+Titles = $x('//div/h2[@data-h]/span/text()').map(x => x.wholeText)
+Summary = $x('//div[@class="lead"]/p/text()').map(x => x.wholeText)
+Body = $x('//div[@class="html-content"]/p/text()').map(x => x.wholeText)
